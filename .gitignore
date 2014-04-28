@@ -1,0 +1,15 @@
+*.data/
+bin/
+build/
+target/
+.project
+.classpath
+.settings/
+activemq-data/
+*.iml
+*.war
+*.jar
+*.ear
+*.log
+.idea
+*.iml
