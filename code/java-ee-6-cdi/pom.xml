@@ -19,7 +19,6 @@
         <version.slf4j>1.6.4</version.slf4j>
         <version.logback>1.0.7</version.logback>
         <version.javaee-api>6.0</version.javaee-api>
-        <version.jackson>1.9.13</version.jackson>
     </properties>
 
     <!-- DEPENDENCIES -->
@@ -52,18 +51,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>org.codehaus.jackson</groupId>
-                <artifactId>jackson-jaxrs</artifactId>
-                <version>${version.jackson}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.codehaus.jackson</groupId>
-                <artifactId>jackson-xc</artifactId>
-                <version>${version.jackson}</version>
-            </dependency>
-
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>java-ee-6-cdi-lib</artifactId>

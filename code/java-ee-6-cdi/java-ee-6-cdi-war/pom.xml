@@ -23,16 +23,6 @@
             <groupId>${project.groupId}</groupId>
             <artifactId>java-ee-6-cdi-lib</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-jaxrs</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-xc</artifactId>
-        </dependency>
     </dependencies>
 
     <build>
