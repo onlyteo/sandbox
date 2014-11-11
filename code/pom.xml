@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.onlyteo.sandbox</groupId>
+    <artifactId>sandbox</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>sandbox</name>
+
+    <!-- MODULES -->
+    <modules>
+        <module>java-ee-6-cdi</module>
+        <module>java-ee-7-jax-rs</module>
+    </modules>
+
+    <!-- PROPERTIES -->
+    <properties>
+    </properties>
+
+    <!-- DEPENDENCIES -->
+    <dependencies>
+    </dependencies>
+</project>

@@ -1,4 +1,4 @@
-package com.teoware.sandbox.web;
+package com.onlyteo.sandbox.api;
 
 public interface Bar {
 

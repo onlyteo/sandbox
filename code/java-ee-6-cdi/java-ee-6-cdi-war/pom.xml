@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.teoware.sandbox</groupId>
+        <groupId>com.onlyteo.sandbox</groupId>
         <artifactId>java-ee-6-cdi</artifactId>
         <version>0.1-SNAPSHOT</version>
     </parent>
