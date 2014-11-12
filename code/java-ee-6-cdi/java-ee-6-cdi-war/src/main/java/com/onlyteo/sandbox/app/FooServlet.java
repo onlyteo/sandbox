@@ -1,4 +1,4 @@
-package com.onlyteo.sandbox.api;
+package com.onlyteo.sandbox.app;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

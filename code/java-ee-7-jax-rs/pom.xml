@@ -14,6 +14,7 @@
 
     <!-- MODULES -->
     <modules>
+        <module>java-ee-7-jax-rs-common</module>
         <module>java-ee-7-jax-rs-backend</module>
         <module>java-ee-7-jax-rs-api</module>
     </modules>
@@ -49,6 +50,12 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>java-ee-7-jax-rs-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>java-ee-7-jax-rs-backend</artifactId>

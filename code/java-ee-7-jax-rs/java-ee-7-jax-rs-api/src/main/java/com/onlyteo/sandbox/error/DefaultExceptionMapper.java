@@ -1,14 +1,16 @@
-package com.onlyteo.sandbox.api.error;
+package com.onlyteo.sandbox.error;
 
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
+
+import static com.onlyteo.sandbox.util.ResponseUtil.badRequest;
 
 @Provider
 public class DefaultExceptionMapper implements ExceptionMapper<Exception> {
 
     @Override
     public Response toResponse(Exception exception) {
-        return Response.status(Response.Status.BAD_REQUEST).entity(exception.getMessage()).build();
+        return badRequest(exception.getMessage());
     }
 }

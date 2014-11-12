@@ -1,7 +1,11 @@
-package com.onlyteo.sandbox.backend.services;
+package com.onlyteo.sandbox.backend;
 
-import com.onlyteo.sandbox.backend.domain.Foo;
+import com.onlyteo.sandbox.domain.Foo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+import javax.inject.Inject;
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -10,9 +14,14 @@ import java.util.UUID;
 
 public class FooService {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(FooService.class);
     private static final Map<String, Foo> REPO = new HashMap<String, Foo>();
 
+    @Inject
+    private HttpServletRequest request;
+
     public Foo read(String id) {
+        LOGGER.info("Request ID: {}", request.getAttribute("requestId"));
         if (id == null) {
             throw new IllegalArgumentException("Id is null");
         }
@@ -20,10 +29,12 @@ public class FooService {
     }
 
     public List<Foo> list() {
+        LOGGER.info("Request ID: {}", request.getAttribute("requestId"));
         return new ArrayList<Foo>(REPO.values());
     }
 
     public Foo create(Foo foo) {
+        LOGGER.info("Request ID: {}", request.getAttribute("requestId"));
         if (foo == null) {
             throw new IllegalArgumentException("Foo is null");
         }
@@ -34,6 +45,7 @@ public class FooService {
     }
 
     public Foo update(Foo foo) {
+        LOGGER.info("Request ID: {}", request.getAttribute("requestId"));
         if (foo == null) {
             throw new IllegalArgumentException("Foo is null");
         }
@@ -49,6 +61,7 @@ public class FooService {
     }
 
     public Foo delete(String id) {
+        LOGGER.info("Request ID: {}", request.getAttribute("requestId"));
         if (id == null) {
             throw new IllegalArgumentException("Id is null");
         }

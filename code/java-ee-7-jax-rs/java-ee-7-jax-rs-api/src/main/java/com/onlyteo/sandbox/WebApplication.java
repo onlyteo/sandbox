@@ -1,4 +1,4 @@
-package com.onlyteo.sandbox.api;
+package com.onlyteo.sandbox;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

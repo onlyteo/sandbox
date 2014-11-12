@@ -8,17 +8,9 @@
         <version>0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>java-ee-7-jax-rs-backend</artifactId>
+    <artifactId>java-ee-7-jax-rs-common</artifactId>
     <packaging>jar</packaging>
-    <name>java-ee-7-jax-rs-backend</name>
-
-    <dependencies>
-        <!-- Internal -->
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>java-ee-7-jax-rs-common</artifactId>
-        </dependency>
-    </dependencies>
+    <name>java-ee-7-jax-rs-common</name>
 
     <build>
         <finalName>${project.artifactId}</finalName>

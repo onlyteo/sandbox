@@ -1,4 +1,4 @@
-package com.onlyteo.sandbox.backend.domain;
+package com.onlyteo.sandbox.domain;
 
 public class Foo {
 

@@ -1,4 +1,4 @@
-package com.onlyteo.sandbox.api;
+package com.onlyteo.sandbox.app;
 
 public interface Bar {
 

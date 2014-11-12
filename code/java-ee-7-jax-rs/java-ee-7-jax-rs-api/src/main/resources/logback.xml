@@ -21,7 +21,7 @@
         </layout>
     </appender>
 
-    <logger name="com.onlyteo.sandbox.api">
+    <logger name="com.onlyteo.sandbox.app">
         <level value="debug"/>
     </logger>
 
