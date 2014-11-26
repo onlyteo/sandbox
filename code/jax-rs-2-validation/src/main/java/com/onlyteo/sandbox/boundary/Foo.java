@@ -1,4 +1,4 @@
-package acntech.boundary;
+package com.onlyteo.sandbox.boundary;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -12,15 +12,15 @@ import javax.ws.rs.core.MediaType;
 @Produces(MediaType.TEXT_PLAIN)
 public class Foo {
 
-    private static String foo = "";
+    private static String BAR = "";
 
     @GET
     public String get() {
-        return foo;
+        return BAR;
     }
 
     @POST
-    public void post(@NotEmpty String foo) {
-        this.foo = foo;
+    public void post(@NotEmpty String b) {
+        BAR = b;
     }
 }

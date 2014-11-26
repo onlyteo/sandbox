@@ -3,7 +3,7 @@
 <configuration scan="true" scanPeriod="30 seconds">
 
     <property name="LOG_ROOT" value="/tmp"/>
-    <property name="LOG_FILE_NAME" value="jax-rs-spring-validation"/>
+    <property name="LOG_FILE_NAME" value="jax-rs-2-spring-4-validation"/>
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>

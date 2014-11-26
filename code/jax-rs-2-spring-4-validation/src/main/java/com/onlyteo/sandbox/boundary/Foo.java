@@ -1,6 +1,6 @@
-package acntech.boundary;
+package com.onlyteo.sandbox.boundary;
 
-import acntech.domain.Bar;
+import com.onlyteo.sandbox.domain.Bar;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

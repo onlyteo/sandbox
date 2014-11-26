@@ -1,4 +1,4 @@
-package acntech.domain;
+package com.onlyteo.sandbox.domain;
 
 import javax.validation.constraints.Pattern;
 

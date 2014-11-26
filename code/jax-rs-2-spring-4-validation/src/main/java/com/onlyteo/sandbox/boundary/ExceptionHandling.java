@@ -1,6 +1,6 @@
-package acntech.boundary;
+package com.onlyteo.sandbox.boundary;
 
-import acntech.domain.Bar;
+import com.onlyteo.sandbox.domain.Bar;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.HttpMediaTypeNotAcceptableException;
 import org.springframework.web.bind.MethodArgumentNotValidException;

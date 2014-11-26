@@ -2,33 +2,32 @@
 <!DOCTYPE configuration>
 <configuration scan="true" scanPeriod="30 seconds">
 
+    <property name="LOG_ROOT" value="/tmp"/>
+    <property name="LOG_FILE_NAME" value="java-ee-6-cdi"/>
+
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-        <layout class="ch.qos.logback.classic.PatternLayout">
+        <encoder>
             <pattern>%date [%thread] %-5level %-40logger{36} - %msg%n</pattern>
-        </layout>
+        </encoder>
     </appender>
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
-            <level>DEBUG</level>
-        </filter>
-        <File>/tmp/java-ee-6-cdi.log</File>
+        <file>${LOG_ROOT}/${LOG_FILE_NAME}.log</file>
+        <append>true</append>
+
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>/tmp/java-ee-6-cdi.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <fileNamePattern>${LOG_ROOT}/${LOG_FILE_NAME}-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>10</maxHistory>
         </rollingPolicy>
-        <layout class="ch.qos.logback.classic.PatternLayout">
+
+        <encoder>
             <pattern>%date [%thread] %-5level %-40logger{36} - %msg%n</pattern>
-        </layout>
+        </encoder>
     </appender>
 
-    <logger name="com.onlyteo.sandbox.app">
-        <level value="debug"/>
-    </logger>
-
     <root>
-        <level value="info"/>
+        <level value="debug"/>
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="FILE"/>
     </root>
-
 </configuration>

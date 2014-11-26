@@ -3,7 +3,7 @@
 <configuration scan="true" scanPeriod="30 seconds">
 
     <property name="LOG_ROOT" value="/tmp"/>
-    <property name="LOG_FILE_NAME" value="java-ee-7-jax-rs"/>
+    <property name="LOG_FILE_NAME" value="spring-3-aop"/>
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>

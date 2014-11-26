@@ -1,4 +1,4 @@
-package acntech.config;
+package com.onlyteo.sandbox.config;
 
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;

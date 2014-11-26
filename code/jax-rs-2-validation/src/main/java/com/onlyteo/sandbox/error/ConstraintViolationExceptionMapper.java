@@ -1,4 +1,4 @@
-package acntech.error;
+package com.onlyteo.sandbox.error;
 
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
