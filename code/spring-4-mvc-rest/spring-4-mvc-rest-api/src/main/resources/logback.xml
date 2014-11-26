@@ -12,9 +12,9 @@
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>DEBUG</level>
         </filter>
-        <File>/tmp/java-ee-7-jax-rs.log</File>
+        <File>/tmp/spring-4-rest.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>/tmp/java-ee-7-jax-rs.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <FileNamePattern>/tmp/spring-4-rest.%d{yyyy-MM-dd}.log</FileNamePattern>
         </rollingPolicy>
         <layout class="ch.qos.logback.classic.PatternLayout">
             <pattern>%date [%thread] %-5level %-40logger{36} - %msg%n</pattern>

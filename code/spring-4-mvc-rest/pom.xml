@@ -8,28 +8,41 @@
         <version>0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>java-ee-7-jax-rs</artifactId>
+    <artifactId>spring-4-mvc-rest</artifactId>
     <packaging>pom</packaging>
-    <name>java-ee-7-jax-rs</name>
+    <name>spring-4-mvc-rest</name>
 
     <!-- MODULES -->
     <modules>
-        <module>java-ee-7-jax-rs-common</module>
-        <module>java-ee-7-jax-rs-backend</module>
-        <module>java-ee-7-jax-rs-api</module>
+        <module>spring-4-mvc-rest-common</module>
+        <module>spring-4-mvc-rest-backend</module>
+        <module>spring-4-mvc-rest-api</module>
     </modules>
 
     <!-- PROPERTIES -->
     <properties>
-        <version.javaee-api>7.0</version.javaee-api>
+        <version.spring>4.1.2.RELEASE</version.spring>
+        <version.javax.servlet-api>3.1.0</version.javax.servlet-api>
     </properties>
 
     <!-- DEPENDENCIES -->
     <dependencies>
         <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-            <version>${version.javaee-api}</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${version.spring}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${version.javax.servlet-api}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -38,13 +51,13 @@
         <dependencies>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>java-ee-7-jax-rs-common</artifactId>
+                <artifactId>spring-4-mvc-rest-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>java-ee-7-jax-rs-backend</artifactId>
+                <artifactId>spring-4-mvc-rest-backend</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>

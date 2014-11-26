@@ -12,13 +12,20 @@
     <modules>
         <module>java-ee-6-cdi</module>
         <module>java-ee-7-jax-rs</module>
+        <module>spring-4-mvc-rest</module>
     </modules>
 
     <!-- PROPERTIES -->
     <properties>
+        <version.logback>1.1.2</version.logback>
     </properties>
 
     <!-- DEPENDENCIES -->
     <dependencies>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${version.logback}</version>
+        </dependency>
     </dependencies>
 </project>
