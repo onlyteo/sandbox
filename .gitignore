@@ -1,15 +1,18 @@
-*.data/
-bin/
-build/
+# Maven
 target/
+generated/
+
+# Eclipse
 .project
 .classpath
 .settings/
-activemq-data/
+
+# IntelliJ
 *.iml
-*.war
-*.jar
-*.ear
-*.log
-.idea
-*.iml
+.idea/
+
+# NetBeans
+nb-configuration.xml
+nbactions.xml
+
+

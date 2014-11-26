@@ -14,9 +14,9 @@
 
     <!-- PROPERTIES -->
     <properties>
-        <jackson.version>1.9.13</jackson.version>
-
         <failOnMissingWebXml>false</failOnMissingWebXml>
+
+        <version.jackson>1.9.13</version.jackson>
     </properties>
 
     <!-- DEPENDENCIES -->
@@ -25,19 +25,19 @@
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-jaxrs</artifactId>
-            <version>${jackson.version}</version>
+            <version>${version.jackson}</version>
         </dependency>
 
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-xc</artifactId>
-            <version>${jackson.version}</version>
+            <version>${version.jackson}</version>
         </dependency>
 
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-mapper-asl</artifactId>
-            <version>${jackson.version}</version>
+            <version>${version.jackson}</version>
         </dependency>
 
         <!-- Internal -->

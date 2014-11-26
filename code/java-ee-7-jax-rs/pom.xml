@@ -21,6 +21,9 @@
 
     <!-- PROPERTIES -->
     <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        
         <version.javaee-api>7.0</version.javaee-api>
     </properties>
 
