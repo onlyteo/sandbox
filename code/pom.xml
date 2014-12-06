@@ -14,6 +14,7 @@
         <module>java-ee-7-jax-rs</module>
         <module>spring-4-mvc-rest</module>
         <module>jax-rs-2-validation</module>
+        <module>jax-rs-2-validation-advanced</module>
         <module>jax-rs-2-spring-4-validation</module>
         <module>spring-3-aop</module>
     </modules>
