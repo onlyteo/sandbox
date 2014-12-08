@@ -17,6 +17,7 @@
         <module>jax-rs-2-validation-advanced</module>
         <module>jax-rs-2-spring-4-validation</module>
         <module>spring-3-aop</module>
+        <module>spring-4-mvc-jsp</module>
     </modules>
 
     <!-- PROPERTIES -->
