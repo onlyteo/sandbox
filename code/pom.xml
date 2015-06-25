@@ -6,26 +6,21 @@
     <artifactId>sandbox</artifactId>
     <version>0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>sandbox</name>
 
     <!-- MODULES -->
     <modules>
-        <module>java-ee-6-cdi</module>
-        <module>java-ee-7-jax-rs</module>
-        <module>java-ee-7-jpa-cache</module>
-        <module>spring-4-mvc-rest</module>
-        <module>jax-rs-2-validation</module>
-        <module>jax-rs-2-validation-advanced</module>
-        <module>jax-rs-2-spring-4-validation</module>
-        <module>spring-3-aop</module>
-        <module>spring-4-mvc-jsp</module>
-        <module>spring-4-quartz</module>
+        <module>java-ee-6</module>
+        <module>java-ee-7</module>
+        <module>jax-rs-2</module>
+        <module>spring-3</module>
+        <module>spring-4</module>
     </modules>
 
     <!-- PROPERTIES -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+
         <version.junit>4.11</version.junit>
         <version.logback>1.1.2</version.logback>
         <version.slf4j>1.7.7</version.slf4j>
