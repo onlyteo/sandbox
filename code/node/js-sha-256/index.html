@@ -4,7 +4,7 @@
     <title>Hello</title>
     <meta charset="utf-8">
     <script src="js/jquery-1.11.3.js"></script>
-    <script src="js/sha-2.0.0.js"></script>
+    <script src="js/sha.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('#my_submit').click(function () {
@@ -14,13 +14,17 @@
                 var hash = hashObj.getHash("B64");
                 $('#my_hidden_text').val(hash);
             });
+
+            $("#my_form").submit(function () {
+                $('#my_text').attr("disabled", true);
+            });
         });
     </script>
 </head>
 <body>
 <h1>Hello</h1>
 
-<form action="/">
+<form id="my_form" action="/">
     <input type="text" name="my_text" id="my_text">
     <input type="hidden" name="my_hidden_text" id="my_hidden_text">
     <input type="submit" name="my_submit" id="my_submit" value="Go">
