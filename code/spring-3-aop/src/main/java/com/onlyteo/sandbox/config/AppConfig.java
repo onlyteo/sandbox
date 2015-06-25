@@ -9,5 +9,5 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableWebMvc
 @ComponentScan({"com.onlyteo.sandbox.boundary", "com.onlyteo.sandbox.error", "com.onlyteo.sandbox.aspect"})
 @Configuration
-public class ApplicationConfig {
+public class AppConfig {
 }
