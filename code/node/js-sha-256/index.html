@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Hello</title>
-    <meta charset="utf-8">
-    <script src="js/jquery-1.11.3.js"></script>
-    <script src="js/sha.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#my_submit').click(function () {
-                var text = $('#my_text').val();
-                var hashObj = new jsSHA("SHA-256", "TEXT");
-                hashObj.update(text);
-                var hash = hashObj.getHash("B64");
-                $('#my_hidden_text').val(hash);
-            });
+    <head>
+        <title>Login sandbox</title>
+        <meta charset="utf-8">
+        <script src="js/jquery-1.11.3.js"></script>
+        <script src="js/sha-2.0.0.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#my_login_form").submit(function () {
+                    $('#my_password_raw').attr("disabled", true);
 
-            $("#my_form").submit(function () {
-                $('#my_text').attr("disabled", true);
+                    var text = $('#my_password_raw').val();
+                    var hashObj = new jsSHA("SHA-256", "TEXT");
+                    hashObj.update(text);
+                    var hash = hashObj.getHash("B64");
+                    $('#my_password').val(hash);
+                });
             });
-        });
-    </script>
-</head>
-<body>
-<h1>Hello</h1>
-
-<form id="my_form" action="/">
-    <input type="text" name="my_text" id="my_text">
-    <input type="hidden" name="my_hidden_text" id="my_hidden_text">
-    <input type="submit" name="my_submit" id="my_submit" value="Go">
-</form>
-</body>
+        </script>
+    </head>
+    <body>
+        <h1>Login sandbox</h1>
+        <div>
+            <form id="my_login_form" action="/">
+                <div><input type="text" name="my_username" id="my_username"></div>
+                <div><input type="password" name="my_password_raw" id="my_password_raw"></div>
+                <input type="hidden" name="my_password" id="my_password">
+                <div><input type="submit" name="my_login" id="my_login" value="Login"></div>
+            </form>
+        </div>
+    </body>
 </html>
